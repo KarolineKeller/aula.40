@@ -1,0 +1,26 @@
+{% extends "bootstrap/base.html" %}
+
+
+{% block title %}Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Seu navegador é: {{user_agent}}</p>
+        <h2>O IP do computador remoto é: {{remote_addr}}</h2>
+        <h2>O host da aplicação é: {host}</h2>
+
+    """.format(menu(), name, user_agent=request.headers.get('User-Agent'), remote_addr=request.remote_addr, host=request.host)
+
+</div>
+<p>The local date and time is {{ moment(current_time).format('LLL') }}.</p>
+<p>That was {{ moment(current_time).fromNow(refresh=True) }}.</p>
+{% endblock %}
+
+
+
+
+
+
+
+
+
