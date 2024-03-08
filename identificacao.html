@@ -1,15 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Flasky - identificacao{% endblock %}
+{% block title %}Flasky{% endblock %}
 
 {% block page_content %}
-<div class="page-header">
-    <h2>Olá, {{name}}</h2>
-        <h3>Prontuário: {{prontuario}}</h3>
-        <h3>Instituição: {{instituicao}}</h3>
+    <div class="page-header">
+        <h1></h1>Olá, {{Karoline Keller Carvalho}}</h1>
+    </div>
 
-    """.format(menu(), name="Karoline Keller", prontuario="PT3014541", instituicao="IFSP")
-</div>
-<p>The local date and time is {{ moment(current_time).format('LLL') }}.</p>
-<p>That was {{ moment(current_time).fromNow(refresh=True) }}.</p>
+    <h2>Prontuário: {{PT3014541}}</h2>
+    <h2>Instituição: {{IFSP}}</h2>
+
 {% endblock %}
